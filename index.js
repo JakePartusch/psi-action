@@ -1,4 +1,5 @@
 const core = require("@actions/core");
+const psi = require("psi");
 
 const run = async () => {
   try {
