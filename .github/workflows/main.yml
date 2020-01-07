@@ -11,6 +11,6 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: psi
         with:
-          url: "https://jake.partus.ch"
-          threshold: 100
+          url: "https://wordpress.org"
+          threshold: 99
           strategy: mobile
