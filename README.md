@@ -1,6 +1,6 @@
 # Page Speed Insights — A GitHub Action 🏎
 
-This action utilizes Google's Page Speed Insights to generate a report on your website's performance
+This action utilizes [Google's Page Speed Insights](https://developers.google.com/speed/docs/insights/v5/about) to generate a report on your website's performance
 
 ## Inputs
 
@@ -18,5 +18,5 @@ steps:
     uses: jakepartusch/psi-action@v1
     id: psi
     with:
-      url: "https://google.com"
+      url: "https://jake.partus.ch"
 ```

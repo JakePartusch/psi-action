@@ -11,4 +11,4 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: psi
         with:
-          url: "https://google.com"
+          url: "https://jake.partus.ch"
