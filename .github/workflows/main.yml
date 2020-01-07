@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  wait_for_netlify:
+  run_psi:
     runs-on: ubuntu-latest
-    name: A job to test this action
+    name: Running Page Speed Insights
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -11,4 +11,4 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: psi
         with:
-          url: "https://jake.partus.ch"
+          url: "https://google.com"
