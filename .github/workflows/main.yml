@@ -12,3 +12,5 @@ jobs:
         id: psi
         with:
           url: "https://jake.partus.ch"
+          threshold: 100
+          strategy: mobile

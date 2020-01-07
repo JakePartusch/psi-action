@@ -7,6 +7,10 @@ inputs:
   url:
     description: "The URL to run the check against"
     required: true
+  threshold:
+    description: "Score to pass the PageSpeed test. Useful for setting a performance budget (default 70)."
+  strategy:
+    description: "Strategy to use when analyzing the page (mobile/desktop)."
 runs:
   using: "node12"
   main: "index.js"
