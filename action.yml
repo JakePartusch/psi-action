@@ -1,5 +1,8 @@
 name: "Page Speed Insights"
 description: "Utilize Google's Page Speed Insights to audit your application"
+branding:
+  icon: "cloug-lightning"
+  color: "green"
 inputs:
   url:
     description: "The URL to run the check against"
