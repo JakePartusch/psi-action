@@ -1,0 +1,14 @@
+on: [pull_request]
+
+jobs:
+  wait_for_netlify:
+    runs-on: ubuntu-latest
+    name: A job to test this action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Running Page Speed Insights
+        uses: ./ # Uses an action in the root directory
+        id: psi
+        with:
+          url: "https://jake.partus.ch"
