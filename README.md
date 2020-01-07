@@ -2,7 +2,7 @@
 
 This action utilizes [Google's Page Speed Insights](https://developers.google.com/speed/docs/insights/v5/about) to generate a report on your website's performance
 
-<p align="center"><img src="https://raw.githubusercontent.com/jakepartusch/psi-action/master/screenshots/screenshot-output.png" alt="Example command line output" width="600"></p>
+<p align="center"><img src="screenshots/screenshot-output.png" alt="Example command line output" width="600"></p>
 
 ## Inputs
 
