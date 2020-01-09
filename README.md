@@ -14,7 +14,7 @@ This action utilizes [Google's Page Speed Insights](https://developers.google.co
 
 Optional — Strategy to use when analyzing the page (mobile/desktop).
 
-### `url`
+### `threshold`
 
 Optional — Score to pass the PageSpeed test. Useful for setting a performance budget (default 70).
 
