@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "^1.2.0",
-    "@actions/github": "^2.0.0",
-    "psi": "^4.0.1"
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "psi": "^4.1.0"
   }
 }

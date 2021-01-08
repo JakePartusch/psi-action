@@ -25,7 +25,7 @@ Basic Usage
 ```yaml
 steps:
   - name: Running Page Speed Insights
-    uses: jakepartusch/psi-action@v1
+    uses: jakepartusch/psi-action@v1.1
     id: psi
     with:
       url: "https://jake.partus.ch"
