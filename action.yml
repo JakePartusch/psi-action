@@ -11,6 +11,8 @@ inputs:
     description: "Score to pass the PageSpeed test. Useful for setting a performance budget (default 70)."
   strategy:
     description: "Strategy to use when analyzing the page (mobile/desktop)."
+  key:
+    description: "A PageSpeed Insights API key"
 runs:
   using: "node12"
   main: "index.js"
