@@ -1,0 +1,47 @@
+on: [pull_request]
+
+jobs:
+  run_psi:
+    runs-on: ubuntu-latest
+    name: Running Page Speed Insights
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Running Page Speed Insights
+        uses: ./ # Uses an action in the root directory
+        id: psi
+        with:
+          url: "https://jake.partus.ch"
+          threshold: 85
+          strategy: mobile
+          activity_type: pull_request
+      - name: Outputting the performance results of a given URL
+        uses: mshick/add-pr-comment@v1
+        with:
+          score: |
+            **PSI Score: **
+            `${{ steps.psi.outputs.score }}`
+            
+            **[CoreWebVitals] FCP Weight: **
+            `${{ steps.psi.outputs.fcp }}`
+            
+            **[CoreWebVitals] TTI Weight: **
+            `${{ steps.psi.outputs.tti }}`
+            
+            **[CoreWebVitals] SI Weight: **
+            `${{ steps.psi.outputs.si }}`
+            
+            **[CoreWebVitals] TBT Weight: **
+            `${{ steps.psi.outputs.tbt }}`
+            
+            **[CoreWebVitals] LCP Weight: **
+            `${{ steps.psi.outputs.lcp }}`
+
+            **[CoreWebVitals] CLS Weight: **
+            `${{ steps.psi.outputs.cls }}`
+            
+            **[CoreWebVitals] FMP Weight: **
+            `${{ steps.psi.outputs.fmp }}`
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]'
+          allow-repeats: false
