@@ -26,6 +26,7 @@ const run = async () => {
     core.setOutput("result-message", String(output));
   } catch (error) {
     core.setFailed(error.message);
+    core.setOutput("result-message", String(error.message));
   }
 };
 
