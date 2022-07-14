@@ -13,6 +13,9 @@ inputs:
     description: "Strategy to use when analyzing the page (mobile/desktop)."
   key:
     description: "A PageSpeed Insights API key"
+outputs:
+  result-message: 
+    description: '生成した文字列' 
 runs:
   using: "node12"
   main: "index.js"
