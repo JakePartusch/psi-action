@@ -29,7 +29,7 @@ Basic Usage
 ```yaml
 steps:
   - name: Running Page Speed Insights
-    uses: jakepartusch/psi-action@v1.2
+    uses: jakepartusch/psi-action@v1.3
     id: psi
     with:
       url: "https://jake.partus.ch"
