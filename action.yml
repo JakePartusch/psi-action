@@ -13,6 +13,25 @@ inputs:
     description: "Strategy to use when analyzing the page (mobile/desktop)."
   key:
     description: "A PageSpeed Insights API key"
+  activity_type:
+    description: "The activity type to trigger workflows that run on this event"
+outputs:
+  score:
+    description: "Performance score of a given URL"
+  fcp:
+    description: "FCP weight of a given URL"
+  tti:
+    description: "TTI weight of a given URL"
+  si:
+    description: "SI weight of a given URL"
+  tbt:
+    description: "TBT weight of a given URL"
+  lcp:
+    description: "LCP weight of a given URL"
+  cls:
+    description: "CLS weight of a given URL"
+  fmp:
+    description: "FMP weight of a given URL"
 runs:
   using: "node12"
   main: "index.js"
